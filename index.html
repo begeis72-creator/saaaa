@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Çarşı Doğu Anadolu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Barlow:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="ana-header">
+  <div class="ic">
+    <div class="logo">
+      <div class="a-ikon">A</div>
+      <div><div>ÇARŞI</div><div class="bölge">DOĞU ANADOLU</div></div>
+    </div>
+    <nav>
+      <a href="#hakkimizda">KİMLİZ</a>
+      <a href="#temsilcilikler">GRUPLAR</a>
+      <a href="#galeri">ÜRETIM</a>
+      <a href="#duyurular">DEPLASMAN</a>
+      <a href="#katil" class="cta">KATIL</a>
+    </nav>
+  </div>
+</header>
+
+<section id="hero" class="hero">
+  <div class="arka"></div>
+  <div class="mesaj">
+    <h1>ÇARŞI<br><strong>DOĞU<br>ANADOLU</strong></h1>
+    <div class="slogan">Doğunun kalbinde siyah beyaz bir sevda</div>
+    <div class="aksiyonlar">
+      <a href="#katil" class="dugme dugme-kirmizi">BIZE KATIL</a>
+      <a href="#duyurular" class="dugme dugme-beyaz">DEPLASMANLARı GÖR</a>
+    </div>
+  </div>
+</section>
+
+<main>
+
+<section id="hakkimizda" class="bolum">
+  <div class="bas">
+    <h2>ASİ RUH</h2>
+    <div class="manifest">
+      <p>Biz tribünün sesidir. Stadyumun çatısını haftalarca önceden hazırlarız, metrelik pankartlara aylarca emek veririz, her deplasmada yüzlerce km yol yaparız.</p>
+      <p>Doğu ve Güneydoğu'nun dağlarından çıkıp Beşiktaş'a omuz omuza duran bir oluşumuz. Fabrika işçisi, esnaf, öğrenci, memur—hepimiz bir sevdanın peşindeyiz.</p>
+      <div class="divider"></div>
+      <p><strong>Yol bize, tribün bize, ses bize.</strong></p>
+    </div>
+  </div>
+</section>
+
+<section id="temsilcilikler" class="bolum temsilcilik-blok">
+  <h2>GRUPLAR</h2>
+  <div class="gruplar-grid" id="gruplar-grid"></div>
+</section>
+
+<section id="galeri" class="bolum">
+  <h2>ÜRETIM</h2>
+  <p class="aciklama">Pankartlar, atkılar, yağmurluklar. Hepsi el emeği. Hepsi aşk.</p>
+  <div class="galeri-grid" id="galeri"></div>
+</section>
+
+<section id="duyurular" class="bolum">
+  <h2>DEPLASMAN</h2>
+  <p class="aciklama">Otobüs, yer, saat. Her malumata karar verilir tribünde.</p>
+  <div id="duyuru-kutusu" class="duyuru-alan"></div>
+</section>
+
+<section id="katil" class="bolum katil-bolum">
+  <h2>BIZE KATIL</h2>
+  <p class="aciklama">Bilgilerini bırak. Temsilciliğin seninle konuşsun.</p>
+  <form id="katil-form" class="form">
+    <div class="satir">
+      <input name="ad" placeholder="Ad" required>
+      <input name="soyad" placeholder="Soyad" required>
+    </div>
+    <select name="sehir" id="sehir" required><option value="">Temsilcilik seç</option></select>
+    <input name="telefon" type="tel" placeholder="Telefon (05XX XXX XX XX)" required>
+    <input name="web" class="bot-tuzak" tabindex="-1" aria-hidden="true">
+    <button type="submit" class="dugme dugme-kirmizi">BAŞVURU GÖNDER</button>
+    <p id="form-durumu"></p>
+  </form>
+</section>
+
+</main>
+
+<footer>
+  <div class="bas">
+    <strong>ÇARŞI DOĞU ANADOLU</strong>
+    <div id="footer-bw" class="sosyal"></div>
+    <small>Bağımsız taraftar oluşumu | Doğunun kalbinden siyah beyaz sevda</small>
+  </div>
+</footer>
+
+<dialog id="lb-modal">
+  <button id="lb-kapat" aria-label="Kapat">×</button>
+  <img id="lb-img" alt="">
+  <p id="lb-alt"></p>
+</dialog>
+
+<script type="module" src="app.js"></script>
+<script src="kibris.js" defer></script>
+</body>
+</html>
